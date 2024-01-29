@@ -11,18 +11,33 @@ body {
   width: 30%;
   background-color: #fff;
   border-radius: 10px;
-  font-family: sans-serif;
 }
 .container .inner {
+  box-sizing: border-box;
+  font-family: sans-serif;
   width: 100%;
   border-radius: 10px;
-  background-color: hsl(208, 100%, 58%);
+  background-color: rgb(7, 218, 165);
   padding: 1em;
-  -webkit-clip-path: circle(10% at 0% 0%);
-          clip-path: circle(10% at 0% 0%);
-  transition: -webkit-clip-path 0.5s ease-in-out;
-  transition: clip-path 0.5s ease-in-out;
-  transition: clip-path 0.5s ease-in-out, -webkit-clip-path 0.5s ease-in-out;
+  -webkit-clip-path: circle(8% at 91% 15%);
+          clip-path: circle(8% at 91% 15%);
+  transition: all 0.5s ease-in-out;
+}
+.container .inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background-color: hsl(208, 100%, 58%);
+}
+.container .inner:hover span {
+  color: transparent;
+}
+.container .inner span {
+  float: right;
+  position: relative;
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .container .inner h1 {
   color: white;
@@ -30,8 +45,5 @@ body {
 }
 .container .inner p {
   color: whitesmoke;
-}
-.container:hover .inner {
-  -webkit-clip-path: circle(75%);
-          clip-path: circle(75%);
+  font-size: 0.9em;
 }/*# sourceMappingURL=main.css.map */

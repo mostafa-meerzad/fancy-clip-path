@@ -11,25 +11,42 @@ body {
   width: 30%;
   background-color: #fff;
   border-radius: 10px;
-  font-family: sans-serif;
 
   .inner {
+    box-sizing: border-box;
+    font-family: sans-serif;
     width: 100%;
     border-radius: 10px;
-    background-color: hsl(208, 100%, 58%);
+    background-color: rgb(7, 218, 165);
     padding: 1em;
-    clip-path: circle(10% at 0% 0%);
-    transition: clip-path .5s ease-in-out;
+    clip-path: circle(8% at 91% 15%);
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      clip-path: circle(75%);
+      background-color: hsl(208, 100%, 58%);
+      & span {
+        color: transparent;
+      }
+    }
+    span {
+      float: right;
+      position: relative;
+      color: white;
+      user-select: none;
+    }
+
     h1 {
       color: white;
       margin: 0;
     }
     p {
       color: whitesmoke;
+      font-size: 0.9em;
     }
   }
-  &:hover .inner{
-    // transition: clip-path 1.5s ;
-    clip-path: circle(75%);
-  }
+  //   &:hover .inner{
+  // transition: clip-path 1.5s ;
+  // clip-path: circle(75%);
+  //   }
 }
