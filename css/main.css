@@ -1,0 +1,28 @@
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100svh;
+  margin: 0;
+  padding: 0;
+  background-color: #d8f0ff;
+}
+
+.container {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 10px;
+  font-family: sans-serif;
+}
+.container .inner {
+  width: 100%;
+  border-radius: 10px;
+  background-color: hsl(208, 100%, 58%);
+  padding: 1em;
+}
+.container .inner h1 {
+  color: white;
+  margin: 0;
+}
+.container .inner p {
+  color: whitesmoke;
+}/*# sourceMappingURL=main.css.map */
