@@ -7,31 +7,26 @@ body {
   background-color: #d8f0ff;
 }
 
-.container {
-  width: 30%;
-  background-color: #fff;
-  border-radius: 10px;
-}
-.container .inner {
+.inner {
   box-sizing: border-box;
   font-family: sans-serif;
-  width: 100%;
+  width: 250px;
   border-radius: 10px;
   background-color: rgb(7, 218, 165);
   padding: 1em;
-  -webkit-clip-path: circle(8% at 91% 15%);
-          clip-path: circle(8% at 91% 15%);
+  -webkit-clip-path: circle(8% at 93% 16.5%);
+          clip-path: circle(8% at 93% 16.5%);
   transition: all 0.5s ease-in-out;
 }
-.container .inner:hover {
+.inner:hover {
   -webkit-clip-path: circle(75%);
           clip-path: circle(75%);
   background-color: hsl(208, 100%, 58%);
 }
-.container .inner:hover span {
+.inner:hover span {
   color: transparent;
 }
-.container .inner span {
+.inner span {
   float: right;
   position: relative;
   color: white;
@@ -39,11 +34,11 @@ body {
      -moz-user-select: none;
           user-select: none;
 }
-.container .inner h1 {
+.inner h1 {
   color: white;
   margin: 0;
 }
-.container .inner p {
+.inner p {
   color: whitesmoke;
   font-size: 0.9em;
 }/*# sourceMappingURL=main.css.map */
